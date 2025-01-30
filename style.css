@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", serif;
+  background-color: #dfdfdf;
 }
 ::-webkit-scrollbar {
   width: 7px;
@@ -15,20 +16,15 @@
 ::-webkit-scrollbar-thumb {
   background: #525050;
 }
-body {
-  width: 100%;
-}
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 100vw;
-  overflow-x: hidden;
-  height: 107px;
+  height: 110px;
   gap: 2vw;
-  background-color: #dfdfdf;
-  border-bottom: 4.5px solid black;
+  border-bottom: 5.5px solid black;
 }
 .logoname {
   font-size: 3rem;
@@ -47,7 +43,7 @@ body {
 .nav-item {
   text-decoration: none;
   color: black;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
 }
 .social-icons {
   display: flex;
@@ -58,13 +54,256 @@ body {
   height: 1.3rem;
   width: 1.3rem;
 }
+
+.artistIimage {
+  width: 99%;
+  /* border: 5px solid black; */
+
+  margin: 0 auto;
+}
+.musicLine {
+  position: relative;
+  left: 35vw;
+  width: 64.6vw;
+  font-size: 38px;
+  font-weight: 600;
+  margin: 60px 0px;
+  border-bottom: 4.7px solid black;
+}
+
+.musicbox {
+  display: flex;
+  /* justify-content: center; */
+  margin: 0px auto;
+  align-items: center;
+  /* margin-top: 145px; */
+  gap: 1rem;
+}
+.leftbox {
+  display: flex;
+  width: 40vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.songname {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.song {
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+.listen {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 15px 25px;
+  margin-top: 20px;
+  background-color: black;
+  border: 1px solid black;
+  transition: all 0.1s linear;
+}
+.listen:hover {
+  background-color: #dfdfdf;
+  color: black;
+}
+
+.songImg {
+  margin: 55px 0px;
+  margin-left: 160px;
+  height: 41vw;
+}
+
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  width: 99.6011vw;
+}
+.videoLine {
+  position: relative;
+  text-align: right;
+  width: 64.713vw;
+  font-size: 34px;
+  font-weight: 600;
+  border-bottom: 5.2px solid black;
+}
+.videobox {
+  margin: 60px 0px;
+  display: flex;
+  gap: 1rem;
+  width: 99.6011vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.videobox iframe {
+  height: 41.5vw;
+  width: 80vw;
+}
+
+.rightbutton,
+.leftbutton {
+  opacity: 0.8;
+  background-color: rgb(130, 123, 123);
+  height: 90px;
+  width: 65px;
+  transition: all 0.1s linear;
+}
+
+.rightbutton:hover,
+.leftbutton:hover {
+  background-color: rgb(85, 78, 78);
+}
+.tourLine {
+  position: relative;
+  left: 35vw;
+  text-transform: uppercase;
+  width: 64.605vw;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 70px 0px;
+  border-bottom: 4.7px solid black;
+}
+hr {
+  width: 75vw;
+  margin: 0 auto;
+}
+.tourbox {
+  margin-top: 20vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+  border-bottom: 5px solid black;
+  padding-bottom: 25px;
+}
+
+.tourDetails {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+}
+.dates {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: black;
+}
+.showRequest {
+  background-color: black;
+  color: white;
+  outline: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 16rem;
+  text-transform: uppercase;
+  padding: 20px 42px;
+}
+.merch {
+  background-color: black;
+  color: white;
+  border: 1px;
+  font-weight: 600;
+  font-size: 1.45rem;
+  text-align: center;
+  width: 8rem;
+  text-transform: uppercase;
+  padding: 12px 5px;
+}
+.merch:hover {
+  background-color: #dfdfdf;
+  color: black;
+  transition: all 0.1s linear;
+  border: 1px solid black;
+}
+
+.socialmediaicons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  gap: 2rem;
+}
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.apple {
+  height: 2rem;
+  width: 2rem;
+}
+.footerline {
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  gap: 0.5rem;
+}
+
+.footerline p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: black;
+  color: #dfdfdf;
+  font-weight: 700;
+}
+
+.footertext {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background-color: black;
+  color: #dfdfdf;
+}
+@media (min-width: 345px) and (max-width: 1000px) {
+  .footerline p {
+    font-size: 0.5rem;
+  }
+
+  .footertext {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 1296px) {
+  .footerline p {
+    font-size: 0.7rem;
+  }
+
+  .footertext {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 1133px) and (min-width: 1296px) {
+  .footerline p {
+    font-size: 0.6rem;
+  }
+
+  .footertext {
+    font-size: 0.6rem;
+  }
+}
 @media screen and (max-width: 1000px) {
   .navItems {
     gap: 1rem;
     padding-right: 0;
   }
+  .dates {
+    font-size: 1.1rem;
+  }
+  .showRequest {
+    padding: 15px 35px;
+  }
 }
 @media screen and (max-width: 965px) {
+  .footerline {
+    gap: 0.1rem;
+  }
   .header {
     flex-direction: column;
     align-items: center;
@@ -84,7 +323,152 @@ body {
   }
 }
 @media screen and (max-width: 430px) {
+  .header {
+    height: 20vw;
+  }
+
+  .logoname {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
   .social-icons {
     display: none;
+  }
+  .nav-item {
+    font-size: 1.1rem;
+  }
+  .navItems {
+    gap: 0.9rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .videoContainer {
+    margin: 0px;
+    padding: 0px;
+  }
+  .merch {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 5rem;
+    padding: 8px 3px;
+  }
+  .dates {
+    font-size: 0.9rem;
+  }
+  .showRequest {
+    font-size: 1rem;
+    width: 11rem;
+    padding: 15px 35px;
+  }
+
+  .videobox {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 344px) {
+  .header {
+    height: 65px;
+  }
+  .footerline {
+    height: 100px;
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .footerline p {
+    font-size: 6px;
+    font-weight: 700;
+  }
+
+  .footertext {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .leftbutton {
+    position: absolute;
+    left: 20px;
+    transition: all 0.1s linear;
+  }
+  .rightbutton {
+    position: absolute;
+    right: 20px;
+    transition: all 0.1s linear;
+  }
+  .logoname {
+    font-size: 1.5rem;
+    font-weight: 1000;
+  }
+  .nav-item {
+    font-size: 1rem;
+  }
+  .navItems {
+    gap: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .videobox iframe {
+    height: 11rem;
+    width: 17rem;
+  }
+  .musicbox {
+    flex-direction: column;
+  }
+  .rightbutton,
+  .leftbutton {
+    position: relative;
+    height: 70px;
+    width: 40px;
+    margin: 0px;
+    opacity: 0.5;
+  }
+  .videobox {
+    min-width: 200px;
+    margin: 50px auto;
+    gap: 0rem;
+  }
+  .songImg {
+    height: 95vw;
+  }
+  .leftbox {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footerline {
+    gap: 0rem;
+  }
+}
+@media screen and (max-width: 644px) {
+  .musicLine {
+    margin: 30px 0px;
+  }
+  .songImg {
+    margin: 35px 0px;
+    margin-left: 0px;
+  }
+  .artistIimage {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .leftbox {
+    margin-left: 10px;
+  }
+  .songname {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  .song {
+    font-size: 1.1em;
+    font-weight: 450;
+  }
+  .listen {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 12px 20px;
   }
 }
