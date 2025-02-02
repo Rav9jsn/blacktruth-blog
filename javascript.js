@@ -5,9 +5,9 @@ const videoSec = document.querySelector(".videoLine");
 const tourLine = document.querySelector(".tourLine");
 const vidoPage = document.querySelector(".videoPage");
 const tourPage = document.querySelector(".tourPage");
-const slide = document.querySelectorAll(".slider");
-const btnLeft = document.querySelector(".leftbutton");
-const btnRight = document.querySelector(".rightbutton");
+// const sliders = document.querySelectorAll(".sliders");
+// const btnLeft = document.querySelector(".leftbutton");
+// const btnRight = document.querySelector(".rightbutton");
 
 // ///////
 musicPage.addEventListener("click", function () {
@@ -20,22 +20,32 @@ tourPage.addEventListener("click", function () {
   tourLine.scrollIntoView({ behavior: "smooth" });
 });
 
-// let counter = 0;
-// slide.forEach((slider, i) => {
-//   slider.style.left = `${i * 100}%`;
-// });
+//////////////////
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".slider");
+  const leftButton = document.querySelector(".leftbutton");
+  const rightButton = document.querySelector(".rightbutton");
 
-// function afterClick() {
-//   slide.forEach((sli) => {
-//     sli.style.transform = `translateX(-${counter * 100}%)`;
-//   });
-// }
+  if (!leftButton || !rightButton) {
+    console.error("Navigation buttons not found.");
+    return;
+  }
 
-// btnLeft.addEventListener("click", function () {
-//   afterClick();
-//   counter--;
-// });
-// btnRight.addEventListener("click", function () {
-//   afterClick();
-//   counter++;
-// });
+  let index = 0;
+
+  function updateSlider() {
+    slides.forEach((slide, i) => {
+      slide.style.transform = `translateX(-${index * 100}%)`;
+    });
+  }
+
+  rightButton.addEventListener("click", () => {
+    index = (index + 1) % slides.length;
+    updateSlider();
+  });
+
+  leftButton.addEventListener("click", () => {
+    index = (index - 1 + slides.length) % slides.length;
+    updateSlider();
+  });
+});
